@@ -23,5 +23,12 @@ namespace projeto_Agenda_2025_1Sem.Formularios
             objCadPessoas.MdiParent = this;
             objCadPessoas.Show();
         }
+
+        private void pessoasFiltroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultasPessoas objConsultasPessoas = new frmConsultasPessoas();
+            objConsultasPessoas.MdiParent = this;
+            objConsultasPessoas.Show();
+        }
     }
 }
