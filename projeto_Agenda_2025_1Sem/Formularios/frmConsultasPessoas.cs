@@ -40,6 +40,35 @@ namespace projeto_Agenda_2025_1Sem.Formularios
             {
                 pessoaBindingSource.Filter = "Nome like '%" + txtPesquisar.Text + "'";
             } 
+            //  cidade
+            if (cbbOrientacao.Text == "Possui")
+            {
+                pessoaBindingSource.Filter = "Cidade like '%" + txtPesquisar.Text + "%'";
+            }
+            else if (cbbOrientacao.Text == "Inicia Com")
+            {
+                pessoaBindingSource.Filter = "Cidade like '" + txtPesquisar.Text + "%'";
+            }
+            else if (cbbOrientacao.Text == "Finaliza Com")
+            {
+                pessoaBindingSource.Filter = "Cidade like '%" + txtPesquisar.Text + "'";
+            }
+            // Email
+            if (cbbOrientacao.Text == "Possui")
+            {
+                pessoaBindingSource.Filter = "Email like '%" + txtPesquisar.Text + "%'";
+            }
+            else if (cbbOrientacao.Text == "Inicia Com")
+            {
+                pessoaBindingSource.Filter = "Email like '" + txtPesquisar.Text + "%'";
+            }
+            else if (cbbOrientacao.Text == "Finaliza Com")
+            {
+                pessoaBindingSource.Filter = "Email like '%" + txtPesquisar.Text + "'";
+            }
+            // id
+           
+            
         }
     }
 }

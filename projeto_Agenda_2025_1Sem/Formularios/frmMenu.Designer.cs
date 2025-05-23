@@ -34,8 +34,9 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoasFiltroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.relatoriosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1289, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,25 +90,34 @@
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
+            // pessoasFiltroToolStripMenuItem
+            // 
+            this.pessoasFiltroToolStripMenuItem.Name = "pessoasFiltroToolStripMenuItem";
+            this.pessoasFiltroToolStripMenuItem.Size = new System.Drawing.Size(226, 34);
+            this.pessoasFiltroToolStripMenuItem.Text = "Pessoas(Filtro)";
+            this.pessoasFiltroToolStripMenuItem.Click += new System.EventHandler(this.pessoasFiltroToolStripMenuItem_Click);
+            // 
             // relatoriosToolStripMenuItem
             // 
+            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.relatorioToolStripMenuItem});
             this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
             this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
             this.relatoriosToolStripMenuItem.Text = "Relatorios";
             // 
-            // pessoasFiltroToolStripMenuItem
+            // relatorioToolStripMenuItem
             // 
-            this.pessoasFiltroToolStripMenuItem.Name = "pessoasFiltroToolStripMenuItem";
-            this.pessoasFiltroToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.pessoasFiltroToolStripMenuItem.Text = "Pessoas(Filtro)";
-            this.pessoasFiltroToolStripMenuItem.Click += new System.EventHandler(this.pessoasFiltroToolStripMenuItem_Click);
+            this.relatorioToolStripMenuItem.Name = "relatorioToolStripMenuItem";
+            this.relatorioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.relatorioToolStripMenuItem.Text = "Pessoa";
+            this.relatorioToolStripMenuItem.Click += new System.EventHandler(this.relatorioToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1289, 583);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -131,5 +141,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pessoasFiltroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatorioToolStripMenuItem;
     }
 }

@@ -30,5 +30,12 @@ namespace projeto_Agenda_2025_1Sem.Formularios
             objConsultasPessoas.MdiParent = this;
             objConsultasPessoas.Show();
         }
+
+        private void relatorioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVisualizeRelatorio objVisualiza = new frmVisualizeRelatorio();
+            objVisualiza.MdiParent = this;
+            objVisualiza.Show();
+        }
     }
 }
