@@ -37,5 +37,10 @@ namespace projeto_Agenda_2025_1Sem.Formularios
             objVisualiza.MdiParent = this;
             objVisualiza.Show();
         }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

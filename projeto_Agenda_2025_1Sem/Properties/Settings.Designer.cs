@@ -12,7 +12,7 @@ namespace projeto_Agenda_2025_1Sem.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.12.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.13.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,8 +26,9 @@ namespace projeto_Agenda_2025_1Sem.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=172.16.255.252;Initial Catalog=db_241083;User ID=241083;Password=A22s" +
-            "27b14@;Encrypt=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=172.16.255.252;Initial Catalog=db_241083;Persist Security Info=True;U" +
+            "ser ID=241083;Password=sqldaloucura145;Encrypt=False;TrustServerCertificate=True" +
+            "")]
         public string db_241083ConnectionString {
             get {
                 return ((string)(this["db_241083ConnectionString"]));

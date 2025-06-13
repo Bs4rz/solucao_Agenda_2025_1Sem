@@ -17,7 +17,7 @@ namespace projeto_Agenda_2025_1Sem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenu());
+            Application.Run(new frmSplashScreen());
         }
     }
 }
